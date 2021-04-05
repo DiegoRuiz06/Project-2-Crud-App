@@ -10,4 +10,3 @@ Node.js
 Javascript
 MongoDB
 HTML and CSS
->>>>>>> 719d8caa2c39cc390f265c22ec51f938f5721aa0
