@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<%- include('partials/header') %>
+
+<main>
+  <div><h1>hello, <%= user ? user.name : "friend" %></h1></div>
+  <a href='/applications'>Click here to see your application list.</a><br>
+  <a href='/follows'>Click here to see your scheduled follow-ups.</a>
+</main>
+
+<%- include('partials/footer') %>

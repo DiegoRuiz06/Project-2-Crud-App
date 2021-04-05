@@ -1,8 +1,113 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+html {
+  box-sizing: border-box
 }
 
-a {
-  color: #00B7FF;
+/* The Universal Selector */
+*, /* All elements*/
+*::before, /* All ::before pseudo-elements */
+*::after { /* All ::after pseudo-elements */
+  /* height & width will now include border & padding by default
+     but can be over-ridden as needed */
+  box-sizing: inherit;
+}
+
+/* resets font size to be 62.5% of the user preference - 
+     in most browser configurations this will be 10px */
+:root {
+    font-size: 62.5%
+}
+
+body {
+  background-color: gray;
+  /* Use a system font, if none are available use an available sans-sarif font */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin: 0;
+}
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#nav-div {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+main a {
+  font-size:larger;
+}
+
+fieldset {
+  padding: 10px;
+  border: 3px solid darkgray;
+}
+
+#job-apps-wrapper {
+  width: 90vw;
+}
+
+.index-job-listing {
+  font-size: 14px;
+}
+
+.heading {
+  font-size: 16px;
+}
+
+#new-app-button-form {
+  margin-bottom: 20px;
+}
+
+#new-app-button {
+  min-height: 50px;
+  min-width: 220px;
+  font-size: 22px;
+  border: 2px solid;
+  border-radius: 15px;
+}
+
+#app-detail-fieldset {
+  min-width: 250px;
+}
+
+.edit-delete-buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  margin: 15px 0;
+  min-width: 300px;
+}
+
+.edit-delete-button {
+  min-height: 50px;
+  min-width: 220px;
+  font-size: 22px;
+  border: 2px solid;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+.larger-link {
+  font-size: 20px;
 }

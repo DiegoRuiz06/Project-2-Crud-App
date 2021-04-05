@@ -1,0 +1,23 @@
+<%- include('../partials/header') %>
+
+<main>
+    <form id='new-app-button-form' action='/applications/new' method="GET">
+        <button id='new-app-button'>Log a New App</button>
+    </form>
+
+    <section id='job-apps-wrapper'>
+        <% applications.forEach(appl => { %>
+        
+            <section class='index-job-listing'>
+                <span class='heading'>Company:</span> <%=appl.appl_company %><br>
+                <span class='heading'>Job Title:</span> <%=appl.appl_jobTitle%><br>
+                <span class='heading'>Job Id:</span> <%=appl.appl_jobId%><br>
+                <a href='/applications/<%=appl._id%>'>View Details</a>
+            </section><br><br>
+
+        <% }) %>
+    </section>
+
+</main>
+
+<%- include('../partials/footer') %>
